@@ -1,0 +1,25 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+@import "../../styles/size.scss";
+
+.circleFaButton {
+    width: 128px;
+    height: 128px;
+    background: $primary;
+    border-radius: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+.serviceItemHeading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+@media (max-width: $maxWidthForS) {
+    .circleFaButton{
+      display: none;
+  }
+}
+  

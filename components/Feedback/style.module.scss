@@ -1,0 +1,21 @@
+@import "../../styles/colors.scss";
+@import "../../styles/size.scss";
+@import "../../styles/fonts.scss";
+
+.table {
+    text-align: center;
+    justify-items: center;
+}
+
+.contactRow {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ .icon {
+    color: $gray-600;
+ }

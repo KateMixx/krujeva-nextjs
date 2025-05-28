@@ -1,0 +1,11 @@
+@import "../../styles/size.scss";
+
+.pageSection {
+    padding: 20px 0;
+  }
+  @media (min-width: $maxWidthForM) {
+    .pageSection {
+      padding: 50px 0;
+    }
+  }
+  

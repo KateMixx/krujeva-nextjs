@@ -1,0 +1,83 @@
+@import "../../styles/fonts.scss";
+@import "../../styles/size.scss";
+@import "../../styles/colors.scss";
+
+.imageCard {
+    height: 491px;
+    position: relative;
+    overflow-y: hidden;
+    text-align: center;
+
+    .image {
+      height: 491px;
+      width: 100%;
+      position: absolute;
+      object-fit: cover;
+    }
+    .noPadding {
+      padding: 0;
+      position: relative;
+    }
+    .introText {
+      padding-top: 150px;
+      padding-bottom: 100px;
+      
+      .introLeadIn {
+        font-size: 22px;
+        font-style: italic;
+        line-height: 22px;
+        margin-bottom: 25px;
+        color: $white;
+        text-shadow: 2px 2px 4px black;
+        @include serif-font;
+      }
+      .introHeading {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 50px;
+        color: $white;
+        margin-bottom: 25px;
+        text-shadow: 7px 7px 7px black;
+        text-transform: uppercase;
+        @include heading-font;
+      }
+    }
+  }
+
+  @media (min-width: $maxWidthForM) {
+    .imageCard {
+      height: 759px;
+      text-align: center;
+
+      .image {
+        height: 759px;
+        width: 100%;
+      }
+
+      .noPadding {
+        position: relative;
+      }
+      
+      .introText {
+        padding-top: 300px;
+        padding-bottom: 200px;
+
+        .introLeadIn {
+          font-size: 40px;
+          font-style: italic;
+          line-height: 40px;
+          margin-bottom: 25px;
+          @include serif-font;
+        }
+        .introHeading {
+          font-size: 75px;
+          font-weight: 700;
+          line-height: 75px;
+          margin-bottom: 50px;
+            text-transform: uppercase;
+          @include heading-font;
+        }
+      }
+   }
+ }
+  

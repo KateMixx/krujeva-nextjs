@@ -1,0 +1,40 @@
+@import "../../styles/fonts.scss";
+@import "../../styles/colors.scss";
+
+.adressRow {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.adressCol {
+   text-align: center;
+  }
+
+  .map {
+    width: 100%;
+    height: 100%;
+  }
+
+.adressLineRow {
+    text-align: center;
+    display: flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center; 
+    height: 24%;
+ }
+ 
+ .icon {
+    color: $gray-600;
+    width: 20%;
+ }
+
+ .subText {
+    width: 80%;
+ }
+
+ @media (max-width: 992px) {
+    .adressCol {
+        margin-top: 40px;
+    }
+ }
