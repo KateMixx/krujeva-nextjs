@@ -12,6 +12,7 @@ import Portfolio from '@/components/Portfolio/Portfolio'
 import Address from '@/components/Address/Address'
 import Footer from '@/components/Footer/Footer'
 import Clients from '@/components/Clients/Clients'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 export default function App({ Component, pageProps }: AppProps) {
   return <>

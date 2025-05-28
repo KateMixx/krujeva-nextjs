@@ -6,7 +6,6 @@ import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 import style from './style.module.scss';
 import { faClock, faMapMarker, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import clsx from "clsx";
 
 interface IAddress {
   anchor: string,
@@ -35,7 +34,7 @@ const Address: React.FunctionComponent<IAddress> = (props) => {
         <Col className={style.adressCol}>
           {/* Адрес */}
           <div className={style.adressLineRow}>
-            <FontAwesomeIcon className={clsx("fa-3x", style.icon)} icon={faMapMarker} />
+            <FontAwesomeIcon className={style.icon} icon={faMapMarker} size='3x' />
             <div className={style.subText}>
               {props.adressText}
             </div>
@@ -43,7 +42,7 @@ const Address: React.FunctionComponent<IAddress> = (props) => {
           <hr className="divider " />
           {/* Время работы */}
           <div className={style.adressLineRow}>
-            <FontAwesomeIcon className={clsx("fa-3x", style.icon)} icon={faClock} />
+            <FontAwesomeIcon className={style.icon} icon={faClock} size='3x' />
             <div className={style.subText}>
               {props.workTime}
             </div>
@@ -51,7 +50,7 @@ const Address: React.FunctionComponent<IAddress> = (props) => {
           </div>
           <hr className="divider" />
           <div className={style.adressLineRow}>
-            <FontAwesomeIcon className={clsx("fa-3x", style.icon)} icon={faPhoneAlt} />
+            <FontAwesomeIcon className={style.icon} icon={faPhoneAlt} size='3x' />
             <div className={style.subText}>
               {props.contacts}
             </div>
