@@ -50,7 +50,7 @@ const Services: React.FunctionComponent<IServices> = (props) => {
             </Row>
             <Row md={2} xs={1} lg={3} className={style.serviceRow}>
                 {services.map((service) => (
-                    <Col>
+                    <Col key={service.key}>
                         <ServiceItem {...service} />
                     </Col>
                 ))}

@@ -57,7 +57,7 @@ function NavBar(props: IProps) {
         <Navbar.Collapse>
           <Nav className="text-uppercase ml-auto">
             {anchors.map((anchor) => (
-              <Nav.Item>
+              <Nav.Item key={anchor}>
                 <Link
                   className={style.navLink}
                   activeClass={style.navLinkActive}

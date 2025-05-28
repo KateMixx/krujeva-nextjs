@@ -44,7 +44,7 @@ const Feedback: React.FunctionComponent<IServices> = (props) => {
       </Row>
       <Row xs={1} md={3} className={style.contactRow}>
         {contscts.map((contact) => (
-          <a href={contact.linkContact} className='text-decoration-none'>
+          <a key={contact.key} href={contact.linkContact} className='text-decoration-none'>
             <ServiceItem classname={style.icon} inverse={false} size='3x' {...contact} />
           </a>
         ))}
